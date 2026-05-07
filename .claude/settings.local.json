@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import hermes_agent; print\\('OK'\\)\")",
+      "Bash(python -c \"import hermes_state; print\\('hermes_state OK'\\)\")",
+      "Bash(python -c \"import agent; print\\('agent OK'\\)\")",
+      "Bash(python -c \"import tools; print\\('tools OK'\\)\")",
+      "Bash(python -c \"import gateway; print\\('gateway OK'\\)\")",
+      "Bash(python -c \"import fire; print\\('fire OK'\\)\")",
+      "Bash(python -c \"import openai; print\\('openai OK'\\)\")",
+      "Bash(python -c \"import anthropic; print\\('anthropic OK'\\)\")",
+      "Bash(python -c \"import rich; print\\('rich OK'\\)\")",
+      "Bash(python -c \"import pydantic; print\\('pydantic OK'\\)\")",
+      "Bash(./venv/Scripts/python.exe -c \"import hermes_agent; print\\('hermes_agent OK'\\)\")",
+      "Bash(./venv/Scripts/python.exe -c \"from hermes_cli.main import main; print\\('CLI OK'\\)\")",
+      "Bash(./venv/Scripts/python.exe -m hermes_cli --help)",
+      "Bash(./venv/Scripts/python.exe cli.py --help)",
+      "Bash(./venv/Scripts/python.exe cli.py --query \"Merhaba, kisa bir自我紹介 yap\" --provider openrouter --model openai/gpt-4o-mini)",
+      "Bash(PYTHONIOENCODING=utf-8 ./venv/Scripts/python.exe -X utf8 cli.py --query \"Merhaba, kendini tanit\" --provider openrouter --model openai/gpt-4o-mini)",
+      "Bash(./venv/Scripts/python.exe -X utf8 -c ' *)",
+      "WebSearch",
+      "PowerShell(pnpm *)",
+      "Bash(npx paperclipai *)",
+      "Bash(git clone *)",
+      "Bash(grep -v \"^C:/Users/user/Downloads/Z.ai_claude code/AI  Reklam  Ajansı/.agents/skills$\")",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git submodule *)"
+    ]
+  }
+}

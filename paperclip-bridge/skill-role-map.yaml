@@ -1,0 +1,110 @@
+# Skill → Paperclip Rol Eslestirmesi
+# 58 skill'i 7 Paperclip rolune baglar
+
+roles:
+
+  cmo:
+    label: "Pazarlama Direktörü"
+    icon: "crown"
+    skills:
+      - analytics-tracking
+      - attribution-modeling
+      - marketing-dashboard
+      - marketing-automation
+      - revops
+      - paid-ads
+      - ads-audit
+      - ads-budget
+      - ads-math
+      - ab-test-setup
+      - pricing-strategy
+      - launch-strategy
+      - marketing-ideas
+      - marketing-psychology
+
+  seo:
+    label: "SEO Uzmanı"
+    icon: "search"
+    skills:
+      - ai-seo
+      - seo-expert
+      - seo-audit
+      - programmatic-seo
+      - schema-markup
+      - site-architecture
+      - content-strategy
+      - competitor-audit
+      - competitor-alternatives
+
+  media_buyer:
+    label: "Medya Alıcısı"
+    icon: "target"
+    skills:
+      - ads-google
+      - ads-meta
+      - ads-linkedin
+      - ads-tiktok
+      - ads-youtube
+      - ads-microsoft
+      - ads-apple
+      - ads-create
+      - ads-plan
+      - ads-report
+      - ads-test
+      - ads-competitor
+      - ads-creative
+      - ads-generate
+      - ads-dna
+      - ads-landing
+      - ads-photoshoot
+
+  copywriter:
+    label: "İçerik Yazarı"
+    icon: "message-square"
+    skills:
+      - copywriting
+      - copy-editing
+      - ad-creative
+      - social-content
+      - email-sequence
+      - cold-email
+      - newsletter
+      - pr-communications
+      - product-marketing-context
+      - video-marketing
+
+  designer:
+    label: "Görsel Üretici"
+    icon: "sparkles"
+    skills:
+      - krea-ai
+      - pixa
+      - kie-ai
+      - fantastic-posters
+
+  video:
+    label: "Video Üretici"
+    icon: "wand"
+    skills:
+      - remotion
+
+  growth:
+    label: "Büyüme Uzmanı"
+    icon: "rocket"
+    skills:
+      - customer-research
+      - customer-journey
+      - churn-prevention
+      - lead-magnets
+      - free-tool-strategy
+      - referral-program
+      - influencer-marketing
+      - sales-enablement
+      - form-cro
+      - page-cro
+      - popup-cro
+      - signup-flow-cro
+      - paywall-upgrade-cro
+      - onboarding-cro
+      - context-analyzer
+      - social-listening

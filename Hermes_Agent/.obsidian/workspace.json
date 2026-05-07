@@ -1,0 +1,253 @@
+{
+  "main": {
+    "id": "ef6d659201003a68",
+    "type": "split",
+    "children": [
+      {
+        "id": "902cef7aef8dfc74",
+        "type": "tabs",
+        "dimension": 29.602888086642597,
+        "children": [
+          {
+            "id": "7680986ec453e481",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "log.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "log"
+            }
+          }
+        ]
+      },
+      {
+        "id": "66608c8dc5b831ad",
+        "type": "tabs",
+        "dimension": 70.3971119133574,
+        "children": [
+          {
+            "id": "90bace1cb273bf12",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Grafik Görünümü"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9f9e4bbd79feefaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "01d4cce5cb9a7634",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb9a16d3e5eddc77",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dosya Gezgini"
+            }
+          },
+          {
+            "id": "f88f4c4d8b2c81b8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ara"
+            }
+          },
+          {
+            "id": "d0be0ad27ed46cfa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Yer İmleri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4ddda601d1e0955c",
+    "type": "split",
+    "children": [
+      {
+        "id": "543ad8847dcb00e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "154475c0f5dd37a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "log.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "log için geri bağlantılar"
+            }
+          },
+          {
+            "id": "3038791348585823",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "log.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "log'dan giden bağlantılar"
+            }
+          },
+          {
+            "id": "94525b6d24811d32",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiketler"
+            }
+          },
+          {
+            "id": "a8bd569d35b9ab5e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tüm özellikler"
+            }
+          },
+          {
+            "id": "1ff3bbfbb0c8c0e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "log.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "log ana hatları"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Hızlı geçişi aç": false,
+      "graph:Grafik görünümünü aç": false,
+      "canvas:Yeni tuval oluşturun": false,
+      "daily-notes:Bugünün Notunu Aç": false,
+      "templates:Şablon ekle": false,
+      "command-palette:Komut paletini aç": false,
+      "bases:Yeni taban oluştur": false
+    }
+  },
+  "active": "7680986ec453e481",
+  "lastOpenFiles": [
+    "repo/venv/Lib/site-packages/lark_oapi/api/hire/v2/__pycache__/__init__.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/hire/v2/__pycache__/version.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/hire/v2/__pycache__",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/faq.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/__init__.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/notification.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/ticket_message.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/ticket_customized_field.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/ticket.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/event.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/lark_oapi/api/helpdesk/v1/resource/__pycache__/bot_message.cpython-311.pyc",
+    "repo/venv/Lib/site-packages/modal/builder/README.md",
+    "repo/venv/Lib/site-packages/mistralai/extra/README.md",
+    "repo/venv/Lib/site-packages/numpy/random/LICENSE.md",
+    "issues/001-windows-unix-only-testler.md",
+    "issues/001-windows-pwd-modul-hatasi.md",
+    "decisions/002-telegram-entegrasyonu.md",
+    "log.md",
+    "repo/venv/Lib/site-packages/win32/test/win32rcparser/python.bmp",
+    "repo/venv/Lib/site-packages/win32/Demos/images/smiley.bmp",
+    "repo/venv/Lib/site-packages/win32/Demos/images/frowny.bmp",
+    "repo/venv/Lib/site-packages/fire/console/README.md",
+    "Hoş geldiniz.md",
+    "repo/venv/Lib/site-packages/openai/resources/webhooks/api.md",
+    "repo/venv/Lib/site-packages/openai/resources/responses/api.md",
+    "repo/venv/Lib/site-packages/openai/resources/realtime/api.md",
+    "repo/venv/Lib/site-packages/openai/resources/conversations/api.md",
+    "repo/venv/Lib/site-packages/anthropic/lib/foundry.md",
+    "repo/venv/Lib/site-packages/opentelemetry/sdk/metrics/_internal/exponential_histogram/mapping/ieee_754.md",
+    "decisions/001-windows-wsl2-mi-yerel-mi.md",
+    "concepts/ajan-ogrenme-dongusu.md",
+    "sources/autoresearch-genel-bakis.md",
+    "sources/hermes-agent-genel-bakis.md",
+    "repo-autoresearch/program.md",
+    "raw/sources/hermes-security.md",
+    "raw/sources/hermes-contributing.md",
+    "raw/sources/hermes-agents.md",
+    "raw/sources/hermes-readme.md",
+    "repo/assets/banner.png",
+    "repo/plans/gemini-oauth-provider.md",
+    "repo/website/static/img/docs/cli-layout.svg",
+    "repo/website/static/img/docs/session-recap.svg",
+    "repo/website/static/img/hermes-agent-banner.png",
+    "repo/website/static/img/nous-logo.png",
+    "repo/website/static/img/logo.png",
+    "repo/website/static/img/apple-touch-icon.png"
+  ]
+}

@@ -1,0 +1,97 @@
+# Hermes-Paperclip Bridge Configuration
+# Her müşteri = 1 organizasyon + 1 Telegram bot
+
+bridge:
+  hermes_api_url: "http://localhost:8642/v1"
+  paperclip_api_url: "http://localhost:3100"
+
+# Varsayılan dil
+locale: "tr"
+
+# Müşteri (Organizasyon) Tanımları
+organizations:
+  # Şablon - Yeni müşteri eklerken bu yapıyı kullan
+  template:
+    name: ""
+    prefix: ""
+    roles:
+      - role: cmo
+        label: "Pazarlama Direktörü"
+        skills:
+          - analytics-tracking
+          - ab-test-setup
+          - ads-math
+        max_concurrent_runs: 5
+        budget_limit_cents: 50000  # $500/ay
+
+      - role: engineer
+        label: "SEO Uzmanı"
+        skills:
+          - ai-seo
+          - seo-expert
+        max_concurrent_runs: 3
+
+      - role: pm
+        label: "Medya Alıcısı"
+        skills:
+          - ads-google
+          - ads-meta
+          - ads-linkedin
+          - ads-tiktok
+          - ads-youtube
+        max_concurrent_runs: 5
+
+      - role: researcher
+        label: "İçerik Yazarı"
+        skills:
+          - copywriting
+          - ad-creative
+          - content-strategy
+          - social-content
+        max_concurrent_runs: 10
+
+      - role: designer
+        label: "Görsel Üretici"
+        skills:
+          - krea-ai
+          - pixa
+          - kie-ai
+        max_concurrent_runs: 3
+
+      - role: general
+        label: "Video Üretici"
+        skills:
+          - remotion
+        max_concurrent_runs: 2
+
+# Hermes Skill Kaynak Dizini
+skills_source: "../AI  Reklam  Ajansı/.agents/skills"
+
+# Telegram Bot Yapılandırması (müşteri başına)
+telegram:
+  # Müşteri A
+  # - org_id: "org_musteri_a"
+  #   bot_token: "${TELEGRAM_BOT_A_TOKEN}"
+  #   allowed_users: [123456789]
+  #
+  # Müşteri B
+  # - org_id: "org_musteri_b"
+  #   bot_token: "${TELEGRAM_BOT_B_TOKEN}"
+  #   allowed_users: [987654321]
+
+# Cron Görevleri (otomatik)
+cron:
+  # Her sabah 09:00 GSC verilerini çek
+  - schedule: "0 6 * * *"  # UTC 06:00 = TR 09:00
+    skill: "seo-expert"
+    message: "Google Search Console verilerini çek ve anomali raporu oluştur"
+
+  # Her Pazartesi Google Ads analizi
+  - schedule: "0 6 * * 1"
+    skill: "ads-google"
+    message: "Haftalık Google Ads kampanya analizi yap ve öneriler sun"
+
+  # Her ayın 1'i rakip analizi
+  - schedule: "0 6 1 * *"
+    skill: "ads-competitor"
+    message: "Aylık rakip reklam istihbaratı raporu oluştur"

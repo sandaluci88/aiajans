@@ -1,0 +1,89 @@
+version: "3.8"
+
+services:
+  paperclip:
+    build:
+      context: ./paperclip
+      dockerfile: Dockerfile
+    ports:
+      - "3100:3100"
+    environment:
+      - PAPERCLIP_BIND=0.0.0..0
+      - PAPERCLIP_PORT=3100
+      - PAPERCLIP_DB_HOST=postgres
+      - PAPERCLIP_DB_PORT=5432
+      - PAPERCLIP_DB_NAME=paperclip
+      - PAPERCLIP_DB_USER=paperclip
+      - PAPERCLIP_DB_PASSWORD=${POSTGRES_PASSWORD:-paperclip123}
+      - PAPERCLIP_LOCALE=tr
+      - PAPERCLIP_AGENT_JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - paperclip_data:/app/data
+      - paperclip_logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - agency-net
+
+  hermes:
+    build:
+      context: ./Hermes_Agent/repo
+      dockerfile: Dockerfile
+    ports:
+      - "8642:8642"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - HERMES_HOME=/app/.hermes
+      - HERMES_API_PORT=8642
+    volumes:
+      - hermes_data:/app/.hermes
+      - ../AI  Reklam  Ajansı/.agents/skills:/app/skills:ro
+    restart: unless-stopped
+    networks:
+      - agency-net
+
+  bridge:
+    build:
+      context: ./paperclip-bridge
+      dockerfile: Dockerfile
+    environment:
+      - HERMES_API_URL=http://hermes:8642/v1
+      - PAPERCLIP_API_URL=http://paperclip:3100
+      - LOCALE=tr
+    depends_on:
+      - paperclip
+      - hermes
+    volumes:
+      - ./paperclip-bridge/config.yaml:/app/config.yaml:ro
+    restart: unless-stopped
+    networks:
+      - agency-net
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=paperclip
+      - POSTGRES_USER=paperclip
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-paperclip123}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U paperclip"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - agency-net
+
+volumes:
+  paperclip_data:
+  paperclip_logs:
+  hermes_data:
+  pg_data:
+
+networks:
+  agency-net:
+    driver: bridge

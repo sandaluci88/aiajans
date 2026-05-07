@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Paperclip data
+paperclip/node_modules/
+paperclip/.pnpm-store/
+
+# Autoresearch data
+autoresearch/.cache/
+autoresearch/run.log
+autoresearch/results.tsv
+
+# Hermes data
+Hermes_Agent/repo/venv/
+Hermes_Agent/repo/node_modules/
+Hermes_Agent/repo/.hermes/
+
+# Embedded git repos (referenced via own remotes)
+Hermes_Agent/Hermes-Wiki/
+Hermes_Agent/repo-autoresearch/
+
+# Environment & secrets
+.env
+.env.local
+*.key
+google-ads.yaml
+service-account*.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Docker volumes
+pg_data/
+paperclip_data/
+hermes_data/
+
+# Logs
+*.log
+logs/

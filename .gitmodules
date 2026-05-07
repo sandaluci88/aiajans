@@ -1,0 +1,9 @@
+[submodule "paperclip"]
+	path = paperclip
+	url = https://github.com/paperclipai/paperclip.git
+[submodule "autoresearch"]
+	path = autoresearch
+	url = https://github.com/karpathy/autoresearch.git
+[submodule "Hermes_Agent/repo"]
+	path = Hermes_Agent/repo
+	url = https://github.com/NousResearch/hermes-agent.git

@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/user/Downloads/Z.ai_claude code/Hermes_Agent/Hermes_Agent/**)",
+      "Bash(mkdir -p raw/sources raw/docs raw/assets sources entities concepts decisions issues syntheses archive)",
+      "Bash(touch __TRACKED_VAR__/.gitkeep)",
+      "Read(//c/c/Users/user/Downloads/Z.ai_claude code/Hermes_Agent/Hermes_Agent/**)",
+      "Bash(uv --version)",
+      "Bash(wsl --status)",
+      "Bash(python -c \"import sys; print\\(sys.version_info\\)\")",
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Bash(cp repo/README.md raw/sources/hermes-readme.md)",
+      "Bash(cp repo/AGENTS.md raw/sources/hermes-agents.md)",
+      "Bash(cp repo/CONTRIBUTING.md raw/sources/hermes-contributing.md)",
+      "Bash(cp repo/pyproject.toml raw/sources/hermes-pyproject.toml)",
+      "Bash(cp repo/.env.example raw/sources/hermes-env-example)",
+      "Bash(uv venv *)",
+      "Bash(uv pip *)",
+      "Bash(cp repo-autoresearch/README.md raw/sources/autoresearch-readme.md)",
+      "Bash(cp repo-autoresearch/program.md raw/sources/autoresearch-program.md)",
+      "Bash(cp repo-autoresearch/pyproject.toml raw/sources/autoresearch-pyproject.toml)",
+      "Bash(./venv/Scripts/python.exe -c \"import hermes_cli; print\\('hermes_cli OK'\\)\")",
+      "Bash(./venv/Scripts/python.exe -c \"import agent; print\\('agent OK'\\)\")",
+      "Bash(./venv/Scripts/python.exe -c \"import gateway; print\\('gateway OK'\\)\")",
+      "Bash(./venv/Scripts/python.exe -m hermes_cli.main --help)",
+      "Bash(./venv/Scripts/python.exe -m pytest tests/ -q --no-header -x --ignore=tests/integration -m \"not integration\")",
+      "Bash(./venv/Scripts/python.exe -m pytest tests/ -q --no-header -x --ignore=tests/integration --ignore=tests/hermes_cli/test_gateway_service.py -m \"not integration\")",
+      "Bash(./venv/Scripts/python.exe -m pytest tests/ -q --no-header --ignore=tests/integration --ignore=tests/hermes_cli/test_gateway_service.py --ignore=tests/tools/test_file_sync_back.py -m \"not integration\" -n auto)",
+      "Bash(./venv/Scripts/python.exe -m pytest tests/ -q --no-header --ignore=tests/integration --ignore=tests/hermes_cli/test_gateway_service.py --ignore=tests/tools/test_file_sync_back.py -m \"not integration\" -n auto --tb=line)",
+      "Bash(./venv/Scripts/python.exe -m pytest tests/ --co -q --ignore=tests/integration --ignore=tests/hermes_cli/test_gateway_service.py --ignore=tests/tools/test_file_sync_back.py -m \"not integration\")"
+    ]
+  }
+}
