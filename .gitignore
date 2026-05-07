@@ -24,7 +24,6 @@ Hermes_Agent/repo/node_modules/
 Hermes_Agent/repo/.hermes/
 
 # Embedded git repos (referenced via own remotes)
-Hermes_Agent/Hermes-Wiki/
 Hermes_Agent/repo-autoresearch/
 
 # Environment & secrets

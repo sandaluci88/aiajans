@@ -7,3 +7,6 @@
 [submodule "Hermes_Agent/repo"]
 	path = Hermes_Agent/repo
 	url = https://github.com/NousResearch/hermes-agent.git
+[submodule "Hermes_Agent/Hermes-Wiki"]
+	path = Hermes_Agent/Hermes-Wiki
+	url = https://github.com/cclank/Hermes-Wiki.git
